@@ -14,7 +14,6 @@
 @import "assets/css/owl.carousel.css";
 @import "assets/css/magnific-popup.css";
 @import "assets/css/slick.css";
-@import "bourbon";
 
 /* Reset Browsers
 -------------------------------------------------------------- */
@@ -4044,10 +4043,10 @@ support for no js
   min-height: 876px !important;
 }
 .overlay-text {
-  position: relative;
-  top: 100%;
-  left: 20%;
-  transform: translate(0, -50%);
+  position: fixed;
+  top: 90%;
+  left: 15%;
+  transform: translate(-10%, -50%);
   padding: 10px;
   border-radius: 5px;
   z-index: 999;
@@ -4055,6 +4054,10 @@ support for no js
   width: 100%;
 }
 
+.checkbox {
+  padding-left: 20px;
+  padding-bottom: 11px;
+}
 .post-entry .post-image {
   width: 100%;
   height: 100vh;
@@ -4873,7 +4876,7 @@ support for no js
 /* Sidebar
 -------------------------------------------------------------- */
 .widget {
-  background: #0f141e;
+  background: #1f2021;
   overflow: hidden;
   padding-top: 25px;
 }
@@ -4919,7 +4922,7 @@ support for no js
   align-items: flex-start;
 }
 .sidebar-blog {
-  min-height: 500px;
+  min-height: 89vh;
 }
 .sidebar-form form input {
   background: #fff;
@@ -5782,7 +5785,7 @@ support for no js
 }
 .section-gallery .tab-content > .tab-pane.active {
   visibility: visible;
-  height: auto;
+  /* height: auto; */
   display: block;
 }
 
@@ -7630,9 +7633,10 @@ body {
 }
 
 .sidebar-navigation {
-  background-color: #0f141e;
+  background-color: #1f2021;
   color: white;
   overflow-x: hidden;
+  display: contents;
   width: 100%;
   position: absolute;
   /* margin-left: 0; */
@@ -7649,6 +7653,7 @@ body {
 
 .sidebar-navigation .cav {
   position: relative;
+  min-width: 340px;
 }
 
 .sidebar-navigation .cav ul {
@@ -7659,7 +7664,7 @@ body {
   margin-left: 0;
   padding: 1rem;
   width: 100%;
-  background: #0f141e;
+  background: #1f2021;
   /* height: 100%; */
   z-index: 1;
   transition: all 1s cubic-bezier(0.65, 0, 0.35, 1);
@@ -7723,7 +7728,7 @@ body {
   /* max-width: 180px; */
   width: 200px;
   height: 100px;
-  background: rgb(15 20 30);
+  background: transparent;
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
@@ -7756,14 +7761,14 @@ body {
   color: #f0151f;
 }
 .cardFea:active {
-  transform: scale(0.95) rotateZ(1.7deg);
+  /* transform: scale(0.95) rotateZ(1.7deg); */
 }
 
 .cardCat:hover {
   border: 1px solid black;
   transform: scale(1.05);
 }
-.selected {
+.cardCat.selected {
   border: 1px solid #08213e;
   transform: scale(1.05);
   background-color: #84868b;
@@ -7786,26 +7791,38 @@ body {
 }
 */
 .cardCat-body {
-  padding: 15px;
+  padding: 9px 1px;
   overflow: hidden;
   width: 100%;
 }
 .card-body {
-  padding: 35px;
+  padding: 35px 1px;
   overflow: hidden;
   width: 100%;
 }
 
+.message .icon {
+  margin-right: 10px;
+}
+.cardCat-body img.float-left {
+  float: left;
+  height: 70px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 30px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
 .card-body img.float-left {
   float: left;
   height: 70px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 30px;
   margin-right: 10px;
   border-radius: 50px;
 }
 
 .message {
-  padding-left: 80px;
+  padding-left: 30px;
 }
 
 .message::after {
@@ -8312,4 +8329,75 @@ td {
   padding: 5px;
   font-size: 0.5em;
   background: #eee;
+}
+
+ul.ks-cboxtags {
+  list-style: none;
+  padding: 20px;
+}
+ul.ks-cboxtags li {
+  display: inline;
+}
+ul.ks-cboxtags li label {
+  display: flex;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  /* border: 2px solid rgba(139, 139, 139, 0.3); */
+  color: #adadad;
+  border-radius: 17px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s;
+}
+
+ul.ks-cboxtags li label {
+  padding: 10px 9px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+ul.ks-cboxtags li label::before {
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "\f067";
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+  content: "\f00c";
+  transform: rotate(-360deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+  /* border: 2px solid #3a3c3d; */
+  background-color: #3a3c3d;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+  /* border: 2px solid #e9a1ff; */
 }

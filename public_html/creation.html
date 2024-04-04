@@ -36,24 +36,22 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/icon/favicon.png" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
       rel="apple-touch-icon-precomposed"
       href="assets/icon/apple-touch-icon-158-precomposed.png"
     />
 
     <script src="https://unpkg.com/@egjs/axes@latest/dist/axes.pkgd.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"
-    ></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/pannellum.css" />
     <style>
       #panorama {
-        width: 600px;
-        height: 400px;
+        width: 100%;
+        height: 100%;
       }
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -320,7 +318,7 @@
           </div>
         </header>
         <div class="overlay"></div>
-        <div class="row" style="min-height: 100vh">
+        <div class="row" style="min-height: 89vh; background-color: #1f2021">
           <div class="col-lg-9 blog-post-items" style="padding: 0">
             <div class="post-entry">
               <div class="image-container">
@@ -338,7 +336,11 @@
                           <div class="car_rotate" style="min-height: 600px">
                             <div
                               class="img_cont"
-                              style="position: relative; z-index: 10"
+                              style="
+                                position: relative;
+                                z-index: 10;
+                                background-color: #1f2021;
+                              "
                             >
                               <img
                                 height="150"
@@ -589,7 +591,7 @@
                       <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                           <div class="cardCat" onclick="selectCard(0)">
-                            <div class="cardCat-body">
+                            <div class="cardCat-body" style="padding: 10px">
                               <h5 class="card-title">R-class</h5>
                               <h6 class="card-subtitle mb-2 text-muted">
                                 Choose your feature
@@ -605,7 +607,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                           <div class="cardCat" onclick="selectCard(1)">
-                            <div class="cardCat-body">
+                            <div class="cardCat-body" style="padding: 10px">
                               <h5 class="card-title">VIP</h5>
                               <h6 class="card-subtitle mb-2 text-muted">
                                 Choose your feature
@@ -621,7 +623,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                           <div class="cardCat" onclick="selectCard(2)">
-                            <div class="cardCat-body">
+                            <div class="cardCat-body" style="padding: 10px">
                               <h5 class="card-title">Prime</h5>
                               <h6 class="card-subtitle mb-2 text-muted">
                                 Choose your feature
@@ -642,9 +644,20 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 sidebar-blog" style="padding: 0">
+          <div
+            class="col-lg-3 sidebar-blog"
+            style="padding: 0; display: grid; justify-content: center"
+          >
             <!-- Other content -->
-            <div class="widget" style="height: 100%; width: 100%">
+            <div
+              class="widget"
+              style="
+                height: 100%;
+                width: 100%;
+                display: grid;
+                justify-content: center;
+              "
+            >
               <div class="section-gallery">
                 <ul class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active">
@@ -677,7 +690,7 @@
                       >×</a
                     >
 
-                    <div id="table" style="padding-top: 50px">
+                    <!-- <div id="table" style="padding-top: 50px">
                       <table>
                         <tr class="tabletitle">
                           <td class="item"><h2>Item</h2></td>
@@ -751,6 +764,16 @@
                           <td class="payment"><h2>$3,644.25</h2></td>
                         </tr>
                       </table>
+                    </div> -->
+
+                    <div id="table" style="padding-top: 50px">
+                      <table>
+                        <tr class="tabletitle">
+                          <td class="item"><h2>Item</h2></td>
+                          <td class="Hours"><h2>Qty</h2></td>
+                          <td class="Rate"><h2>Sub Total</h2></td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
                   <div id="main">
@@ -761,7 +784,7 @@
                           <li class="parent">
                             <a class="headParent" href="#">
                               <div class="cardFea">
-                                <div class="card-body">
+                                <div class="cardCat-body">
                                   <img
                                     src="http://placehold.it/64x64"
                                     class="float-left rounded-circle"
@@ -787,153 +810,114 @@
                               </div>
                             </a>
 
-                            <ul class="level-2">
+                            <ul class="level-2 ks-cboxtags">
                               <li class="back"><a href="#">Back</a></li>
-                              <li>
-                                <a href="#">
-                                  <div class="cardFea">
-                                    <div class="card-body">
-                                      <img
-                                        src="http://placehold.it/64x64"
-                                        class="float-left rounded-circle"
-                                      />
-                                      <div class="message">
-                                        <h1 class="card-title">Nobless</h1>
-                                        <h6
-                                          class="card-subtitle mb-2 text-muted"
-                                        >
-                                          Choose you feature
-                                        </h6>
-                                        <p
-                                          class="price"
-                                          style="text-align: left; margin: 0"
-                                        >
-                                          EGP33,350<br />
-                                        </p>
-                                      </div>
-                                    </div></div
-                                ></a>
-                                <ul class="level-3">
-                                  <li class="back"><a href="#">Back</a></li>
-                                  <li>
-                                    <a href="#" id="image-link-R-Class">
-                                      <div class="cardFea">
-                                        <div class="card-body">
-                                          <img
-                                            src="http://placehold.it/64x64"
-                                            class="float-left rounded-circle"
-                                          />
-                                          <div class="message">
-                                            <h5 class="card-title">R-Class</h5>
-                                            <h6
-                                              class="card-subtitle mb-2 text-muted"
-                                            >
-                                              Describtion
-                                            </h6>
-                                          </div>
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" id="image-link-V-I-P"
-                                      ><div class="cardFea">
-                                        <div class="card-body">
-                                          <img
-                                            src="http://placehold.it/64x64"
-                                            class="float-left rounded-circle"
-                                          />
-                                          <div class="message">
-                                            <h5 class="card-title">Nobless</h5>
-                                            <h6
-                                              class="card-subtitle mb-2 text-muted"
-                                            >
-                                              Describtion
-                                            </h6>
-                                          </div>
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
 
-                                  <li>
-                                    <a href="#"
-                                      ><div class="cardFea">
-                                        <div class="card-body">
-                                          <img
-                                            src="http://placehold.it/64x64"
-                                            class="float-left rounded-circle"
-                                          />
-                                          <div class="message">
-                                            <h5 class="card-title">Prime</h5>
-                                            <h6
-                                              class="card-subtitle mb-2 text-muted"
-                                            >
-                                              Describtion
-                                            </h6>
-                                          </div>
+                              <li>
+                                <a href="#">
+                                  <div class="cardFea">
+                                    <div class="cardCat-body">
+                                      <input
+                                        type="checkbox"
+                                        id="Prestige1"
+                                        onclick="handleCheckboxChange(this)"
+                                        value="1"
+                                      /><label for="Prestige1">
+                                        <img
+                                          src="http://placehold.it/64x64"
+                                          class="float-left rounded-circle"
+                                        />
+                                        <div class="message">
+                                          <h1 class="card-title">Prestige1</h1>
+                                          <h6
+                                            class="card-subtitle mb-2 text-muted"
+                                          >
+                                            Choose your feature
+                                          </h6>
+                                          <p
+                                            class="price"
+                                            style="text-align: left; margin: 0"
+                                          >
+                                            EGP33,350<br />
+                                          </p>
                                         </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </a>
                               </li>
                               <li>
                                 <a href="#">
                                   <div class="cardFea">
-                                    <div class="card-body">
-                                      <img
-                                        src="http://placehold.it/64x64"
-                                        class="float-left rounded-circle"
-                                      />
-                                      <div class="message">
-                                        <h5 class="card-title">Noblesse</h5>
-                                        <h6
-                                          class="card-subtitle mb-2 text-muted"
-                                        >
-                                          Choose you feature
-                                        </h6>
-                                        <p
-                                          class="price"
-                                          style="text-align: left; margin: 0"
-                                        >
-                                          EGP33,350<br />
-                                        </p>
-                                      </div>
-                                    </div></div
-                                ></a>
+                                    <div class="cardCat-body">
+                                      <input
+                                        type="checkbox"
+                                        id="Prestige2"
+                                        onclick="handleCheckboxChange(this)"
+                                        value="1"
+                                      /><label for="Prestige2">
+                                        <img
+                                          src="http://placehold.it/64x64"
+                                          class="float-left rounded-circle"
+                                        />
+                                        <div class="message">
+                                          <h5 class="card-title">Prestige2</h5>
+                                          <h6
+                                            class="card-subtitle mb-2 text-muted"
+                                          >
+                                            Choose your feature
+                                          </h6>
+                                          <p
+                                            class="price"
+                                            style="text-align: left; margin: 0"
+                                          >
+                                            EGP33,350<br />
+                                          </p>
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </a>
                               </li>
                               <li>
                                 <a href="#">
                                   <div class="cardFea">
-                                    <div class="card-body">
-                                      <img
-                                        src="http://placehold.it/64x64"
-                                        class="float-left rounded-circle"
-                                      />
-                                      <div class="message">
-                                        <h5 class="card-title">Signature</h5>
-                                        <h6
-                                          class="card-subtitle mb-2 text-muted"
-                                        >
-                                          Choose you feature
-                                        </h6>
-                                        <p
-                                          class="price"
-                                          style="text-align: left; margin: 0"
-                                        >
-                                          EGP33,350<br />
-                                        </p>
-                                      </div>
-                                    </div></div
-                                ></a>
+                                    <div class="cardCat-body">
+                                      <input
+                                        type="checkbox"
+                                        id="Prestige3"
+                                        onclick="handleCheckboxChange(this)"
+                                        value="1"
+                                      /><label for="Prestige3">
+                                        <img
+                                          src="http://placehold.it/64x64"
+                                          class="float-left rounded-circle"
+                                        />
+                                        <div class="message">
+                                          <h5 class="card-title">Prestige3</h5>
+                                          <h6
+                                            class="card-subtitle mb-2 text-muted"
+                                          >
+                                            Choose your feature
+                                          </h6>
+                                          <p
+                                            class="price"
+                                            style="text-align: left; margin: 0"
+                                          >
+                                            EGP33,350<br />
+                                          </p>
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </a>
                               </li>
                             </ul>
                           </li>
                           <li class="parent">
                             <a class="headParent" href="#">
                               <div class="cardFea">
-                                <div class="card-body">
+                                <div class="cardCat-body">
                                   <img
                                     src="http://placehold.it/64x64"
                                     class="float-left rounded-circle"
@@ -981,7 +965,7 @@
                           <li class="parent">
                             <a class="headParent" href="#">
                               <div class="cardFea">
-                                <div class="card-body">
+                                <div class="cardCat-body">
                                   <img
                                     src="http://placehold.it/64x64"
                                     class="float-left rounded-circle"
@@ -1030,7 +1014,7 @@
                           <li class="parent">
                             <a class="headParent" href="#">
                               <div class="cardFea">
-                                <div class="card-body">
+                                <div class="cardCat-body">
                                   <img
                                     src="http://placehold.it/64x64"
                                     class="float-left rounded-circle"
@@ -1061,7 +1045,7 @@
                               <li>
                                 <a href="#">
                                   <div class="cardFea">
-                                    <div class="card-body">
+                                    <div class="cardCat-body">
                                       <img
                                         src="http://placehold.it/64x64"
                                         class="float-left rounded-circle"
@@ -1087,7 +1071,7 @@
                                   <li>
                                     <a href="#" id="image-link-R-Class">
                                       <div class="cardFea">
-                                        <div class="card-body">
+                                        <div class="cardCat-body">
                                           <img
                                             src="http://placehold.it/64x64"
                                             class="float-left rounded-circle"
@@ -1107,7 +1091,7 @@
                                   <li>
                                     <a href="#" id="image-link-V-I-P"
                                       ><div class="cardFea">
-                                        <div class="card-body">
+                                        <div class="cardCat-body">
                                           <img
                                             src="http://placehold.it/64x64"
                                             class="float-left rounded-circle"
@@ -1128,7 +1112,7 @@
                                   <li>
                                     <a href="#"
                                       ><div class="cardFea">
-                                        <div class="card-body">
+                                        <div class="cardCat-body">
                                           <img
                                             src="http://placehold.it/64x64"
                                             class="float-left rounded-circle"
@@ -1150,7 +1134,7 @@
                               <li>
                                 <a href="#">
                                   <div class="cardFea">
-                                    <div class="card-body">
+                                    <div class="cardCat-body">
                                       <img
                                         src="http://placehold.it/64x64"
                                         class="float-left rounded-circle"
@@ -1175,7 +1159,7 @@
                               <li>
                                 <a href="#">
                                   <div class="cardFea">
-                                    <div class="card-body">
+                                    <div class="cardCat-body">
                                       <img
                                         src="http://placehold.it/64x64"
                                         class="float-left rounded-circle"
@@ -1202,7 +1186,7 @@
                           <li class="parent">
                             <a class="headParent" href="#">
                               <div class="cardFea">
-                                <div class="card-body">
+                                <div class="cardCat-body">
                                   <img
                                     src="http://placehold.it/64x64"
                                     class="float-left rounded-circle"
@@ -1250,7 +1234,7 @@
                           <li class="parent">
                             <a class="headParent" href="#">
                               <div class="cardFea">
-                                <div class="card-body">
+                                <div class="cardCat-body">
                                   <img
                                     src="http://placehold.it/64x64"
                                     class="float-left rounded-circle"
@@ -1299,7 +1283,7 @@
                           <li class="parent">
                             <a class="headParent" href="#">
                               <div class="cardFea">
-                                <div class="card-body">
+                                <div class="cardCat-body">
                                   <img
                                     src="http://placehold.it/64x64"
                                     class="float-left rounded-circle"
@@ -1330,7 +1314,7 @@
                               <li>
                                 <a href="#">
                                   <div class="cardFea">
-                                    <div class="card-body">
+                                    <div class="cardCat-body">
                                       <img
                                         src="http://placehold.it/64x64"
                                         class="float-left rounded-circle"
@@ -1356,7 +1340,7 @@
                                   <li>
                                     <a href="#" id="image-link-R-Class">
                                       <div class="cardFea">
-                                        <div class="card-body">
+                                        <div class="cardCat-body">
                                           <img
                                             src="http://placehold.it/64x64"
                                             class="float-left rounded-circle"
@@ -1376,7 +1360,7 @@
                                   <li>
                                     <a href="#" id="image-link-V-I-P"
                                       ><div class="cardFea">
-                                        <div class="card-body">
+                                        <div class="cardCat-body">
                                           <img
                                             src="http://placehold.it/64x64"
                                             class="float-left rounded-circle"
@@ -1397,7 +1381,7 @@
                                   <li>
                                     <a href="#"
                                       ><div class="cardFea">
-                                        <div class="card-body">
+                                        <div class="cardCat-body">
                                           <img
                                             src="http://placehold.it/64x64"
                                             class="float-left rounded-circle"
@@ -1419,7 +1403,7 @@
                               <li>
                                 <a href="#">
                                   <div class="cardFea">
-                                    <div class="card-body">
+                                    <div class="cardCat-body">
                                       <img
                                         src="http://placehold.it/64x64"
                                         class="float-left rounded-circle"
@@ -1444,7 +1428,7 @@
                               <li>
                                 <a href="#">
                                   <div class="cardFea">
-                                    <div class="card-body">
+                                    <div class="cardCat-body">
                                       <img
                                         src="http://placehold.it/64x64"
                                         class="float-left rounded-circle"
@@ -1471,7 +1455,7 @@
                           <li class="parent">
                             <a class="headParent" href="#">
                               <div class="cardFea">
-                                <div class="card-body">
+                                <div class="cardCat-body">
                                   <img
                                     src="http://placehold.it/64x64"
                                     class="float-left rounded-circle"
@@ -1519,7 +1503,7 @@
                           <li class="parent">
                             <a class="headParent" href="#">
                               <div class="cardFea">
-                                <div class="card-body">
+                                <div class="cardCat-body">
                                   <img
                                     src="http://placehold.it/64x64"
                                     class="float-left rounded-circle"
@@ -1567,7 +1551,7 @@
                     </section>
 
                     <button class="openbtn" onclick="openNav()">
-                      100,000 EGP
+                      Compelete Your teps
                     </button>
                   </div>
                 </div>
@@ -1612,6 +1596,8 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/pannellum.js"></script>
+
     <script>
       $(".sidebar-navigation .cav li a").on("click", function () {
         var parentLevel = $(this).parents("ul").length - 1;
@@ -1749,6 +1735,80 @@
         panorama:
           "assets/img/sportage_2024_pano_lx_saturn_black_woven_cloth.png",
       });
+    </script>
+    <script>
+      // // Array to store checked checkboxes
+      // const checkedCheckboxes = [];
+
+      // // Function to handle checkbox change event
+      // function handleCheckboxChange(event) {
+      //   const checkboxValue = event.defaultValue;
+
+      //   if (event.checked) {
+      //     // If checkbox is checked, push its value to checkedCheckboxes array
+      //     checkedCheckboxes.push(checkboxValue);
+      //   } else {
+      //     // If checkbox is unchecked, remove its value from checkedCheckboxes array
+      //     const index = checkedCheckboxes.indexOf(checkboxValue);
+      //     if (index !== -1) {
+      //       checkedCheckboxes.splice(index, 1);
+      //     }
+      //   }
+
+      //   // Log the updated array
+      //   console.log("Checked Checkboxes:", checkedCheckboxes);
+      // }
+
+      // // Get all checkboxes
+      // const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+      // // Add change event listener to each checkbox
+      // checkboxes.forEach(function (checkbox) {
+      //   checkbox.addEventListener("change", handleCheckboxChange);
+      // });
+
+      function handleCheckboxChange(checkbox) {
+        // Get the parent list item of the checkbox
+        const parentListItem = checkbox.closest("li");
+
+        if (checkbox.checked) {
+          // Get the values from the parent list item
+          const itemName =
+            parentListItem.querySelector(".card-title").textContent;
+          const quantity = checkbox.value;
+          const itemPrice = parentListItem
+            .querySelector(".price")
+            .textContent.trim();
+          const subtotal = (
+            parseFloat(itemPrice.replace("EGP", "")) * quantity
+          ).toFixed(2);
+
+          // Create a new table row
+          const newRow = document.createElement("tr");
+          newRow.classList.add("service");
+
+          // Populate the table row with data
+          newRow.innerHTML = `
+            <td class="tableitem"><p class="itemtext">${itemName}</p></td>
+            <td class="tableitem"><p class="itemtext">${quantity}</p></td>
+            <td class="tableitem"><p class="itemtext">${subtotal}</p></td>
+        `;
+
+          // Append the new row to the table
+          document.querySelector("#table table").appendChild(newRow);
+        } else {
+          // Remove the corresponding table row if the checkbox is unchecked
+          const rowToRemove = document.querySelector(
+            `#table table tr[data-checkbox-id="${checkbox.id}"]`
+          );
+          if (rowToRemove) {
+            rowToRemove.remove();
+          }
+        }
+
+        // Show the table
+        document.getElementById("table").style.display = "block";
+      }
     </script>
   </body>
 </html>
