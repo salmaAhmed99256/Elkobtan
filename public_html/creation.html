@@ -60,266 +60,282 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="white-section">
+    <img
+      id="logoImageSwiper"
+      src="assets/img/Kr.png"
+      onclick="openNav()"
+      alt="autoshow"
+    />
     <div class="animsition">
       <div class="site-wrapper">
         <!-- header-area -->
-        <header
-          id="header"
-          class="main-header fullwidth"
-          style="background: #f0151f"
-        >
-          <div class="container">
-            <a class="main-logo" href="index.html"
-              ><img src="assets/img/logo.png" alt="autoshow"
-            /></a>
-            <ul class="header-buttons">
-              <li class="dropdown">
-                <a
-                  class="user-trigger"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="true"
-                  ><i class="fa fa-user-circle" aria-hidden="true"></i
-                ></a>
-                <ul class="dropdown-menu">
-                  <li><a href="my-profile.html">Profile Settings</a></li>
-                  <li><a href="my-ads.html">My Ads</a></li>
-                  <li><a href="index.html">Sign Out</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="search-trigger">Search<span></span></a>
-              </li>
-              <li>
-                <a class="nav-trigger">Menu<span></span></a>
-              </li>
-            </ul>
-            <nav class="nav">
-              <ul id="primary-nav" class="primary-nav is-fixed">
-                <li class="has-children">
-                  <a>Design Your Car</a>
-                  <ul class="nav-gallery is-hidden">
-                    <li class="nav-drop-close"></li>
-                    <li class="go-back"><a href="#0">Menu</a></li>
-                    <li class="see-all">
-                      <a href="listings.html">All Models</a>
-                    </li>
-                    <li>
-                      <a class="nav-item" href="creation.html">
-                        <img
-                          src="assets/img/models/model1-menu.png"
-                          alt="Model1"
-                        />
-                        <h3>New Carnival</h3>
-                        <p class="price">
-                          $24,659<br /><small>prices starting from </small>
-                        </p>
-                        <p class="tech">
-                          <span
-                            ><i class="fa fa-gears" title="Motor power"></i>
-                            <small>200 hp</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-dashboard"
-                              title="0 - 100 km / h acceleration"
-                            ></i>
-                            <small>4,6 s</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-battery-3"
-                              title="Fuel consumption"
-                            ></i>
-                            <small>8,3 lt</small>
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="nav-item" href="creation.html">
-                        <img
-                          src="assets/img/models/model2-menu.png"
-                          alt="Model2"
-                        />
-                        <h3>Soranto</h3>
-                        <p class="price">
-                          $21,123<br /><small>prices starting from </small>
-                        </p>
-                        <p class="tech">
-                          <span
-                            ><i class="fa fa-gears" title="Motor power"></i>
-                            <small>200 hp</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-dashboard"
-                              title="0 - 100 km / h acceleration"
-                            ></i>
-                            <small>4,6 s</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-battery-3"
-                              title="Fuel consumption"
-                            ></i>
-                            <small>8,3 lt</small>
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="nav-item" href="creation.html">
-                        <img
-                          src="assets/img/models/model3-menu.png"
-                          alt="Model3"
-                        />
-                        <h3>Santafa</h3>
-                        <p class="price">
-                          $33,350<br /><small>prices starting from </small>
-                        </p>
-                        <p class="tech">
-                          <span
-                            ><i class="fa fa-gears" title="Motor power"></i>
-                            <small>200 hp</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-dashboard"
-                              title="0 - 100 km / h acceleration"
-                            ></i>
-                            <small>4,6 s</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-battery-3"
-                              title="Fuel consumption"
-                            ></i>
-                            <small>8,3 lt</small>
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="nav-item" href="creation.html">
-                        <img
-                          src="assets/img/models/model3-menu.png"
-                          alt="Model3"
-                        />
-                        <h3>Sportge</h3>
-                        <p class="price">
-                          $33,350<br /><small>prices starting from </small>
-                        </p>
-                        <p class="tech">
-                          <span
-                            ><i class="fa fa-gears" title="Motor power"></i>
-                            <small>200 hp</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-dashboard"
-                              title="0 - 100 km / h acceleration"
-                            ></i>
-                            <small>4,6 s</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-battery-3"
-                              title="Fuel consumption"
-                            ></i>
-                            <small>8,3 lt</small>
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="nav-item" href="creation.html">
-                        <img
-                          src="assets/img/models/model5-menu.png"
-                          alt="Model5"
-                        />
-                        <h3>Torres</h3>
-                        <p class="price">
-                          $47,650<br /><small>prices starting from </small>
-                        </p>
-                        <p class="tech">
-                          <span
-                            ><i class="fa fa-gears" title="Motor power"></i>
-                            <small>200 hp</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-dashboard"
-                              title="0 - 100 km / h acceleration"
-                            ></i>
-                            <small>4,6 s</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-battery-3"
-                              title="Fuel consumption"
-                            ></i>
-                            <small>8,3 lt</small>
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="nav-item" href="creation.html">
-                        <img
-                          src="assets/img/models/model4-menu.png"
-                          alt="Model4"
-                        />
-                        <h3>Tucson</h3>
-                        <p class="price">
-                          $54,250<br /><small>prices starting from </small>
-                        </p>
-                        <p class="tech">
-                          <span
-                            ><i class="fa fa-gears" title="Motor power"></i>
-                            <small>200 hp</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-dashboard"
-                              title="0 - 100 km / h acceleration"
-                            ></i>
-                            <small>4,6 s</small>
-                          </span>
-                          <span
-                            ><i
-                              class="fa fa-battery-3"
-                              title="Fuel consumption"
-                            ></i>
-                            <small>8,3 lt</small>
-                          </span>
-                        </p>
-                      </a>
-                    </li>
+
+        <div class="sidenav">
+          <header
+            id="header"
+            class="main-header fullwidth"
+            style="background: #f0151f"
+          >
+            <div class="container">
+              <a class="main-logo" onclick="openNav()"
+                ><img src="assets/img/logo.png" alt="autoshow"
+              /></a>
+              <ul class="header-buttons">
+                <li class="dropdown">
+                  <a
+                    class="user-trigger"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                    ><i class="fa fa-user-circle" aria-hidden="true"></i
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="my-profile.html">Profile Settings</a></li>
+                    <li><a href="my-ads.html">My Ads</a></li>
+                    <li><a href="index.html">Sign Out</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="pages-Listing-all-cars.html">Limousine Cars</a>
+                  <a class="search-trigger">Search<span></span></a>
                 </li>
-
-                <li><a href="pages-used-car.html">Used Cars</a></li>
-
-                <li><a href="pages-used-car.html">Media</a></li>
-
-                <li><a href="pages-about.html">About</a></li>
+                <li>
+                  <a class="nav-trigger">Menu<span></span></a>
+                </li>
               </ul>
-            </nav>
-            <div id="search" class="search">
-              <form>
-                <input type="search" placeholder="Search keywords" />
-              </form>
+              <nav class="nav">
+                <ul id="primary-nav" class="primary-nav is-fixed">
+                  <li class="has-children">
+                    <a>Design Your Car</a>
+                    <ul class="nav-gallery is-hidden">
+                      <li class="nav-drop-close"></li>
+                      <li class="go-back"><a href="#0">Menu</a></li>
+                      <li class="see-all">
+                        <a href="listings.html">All Models</a>
+                      </li>
+                      <li>
+                        <a class="nav-item" href="creation.html">
+                          <img
+                            src="assets/img/models/model1-menu.png"
+                            alt="Model1"
+                          />
+                          <h3>New Carnival</h3>
+                          <p class="price">
+                            $24,659<br /><small>prices starting from </small>
+                          </p>
+                          <p class="tech">
+                            <span
+                              ><i class="fa fa-gears" title="Motor power"></i>
+                              <small>200 hp</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-dashboard"
+                                title="0 - 100 km / h acceleration"
+                              ></i>
+                              <small>4,6 s</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-battery-3"
+                                title="Fuel consumption"
+                              ></i>
+                              <small>8,3 lt</small>
+                            </span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-item" href="creation.html">
+                          <img
+                            src="assets/img/models/model2-menu.png"
+                            alt="Model2"
+                          />
+                          <h3>Soranto</h3>
+                          <p class="price">
+                            $21,123<br /><small>prices starting from </small>
+                          </p>
+                          <p class="tech">
+                            <span
+                              ><i class="fa fa-gears" title="Motor power"></i>
+                              <small>200 hp</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-dashboard"
+                                title="0 - 100 km / h acceleration"
+                              ></i>
+                              <small>4,6 s</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-battery-3"
+                                title="Fuel consumption"
+                              ></i>
+                              <small>8,3 lt</small>
+                            </span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-item" href="creation.html">
+                          <img
+                            src="assets/img/models/model3-menu.png"
+                            alt="Model3"
+                          />
+                          <h3>Santafa</h3>
+                          <p class="price">
+                            $33,350<br /><small>prices starting from </small>
+                          </p>
+                          <p class="tech">
+                            <span
+                              ><i class="fa fa-gears" title="Motor power"></i>
+                              <small>200 hp</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-dashboard"
+                                title="0 - 100 km / h acceleration"
+                              ></i>
+                              <small>4,6 s</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-battery-3"
+                                title="Fuel consumption"
+                              ></i>
+                              <small>8,3 lt</small>
+                            </span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-item" href="creation.html">
+                          <img
+                            src="assets/img/models/model3-menu.png"
+                            alt="Model3"
+                          />
+                          <h3>Sportge</h3>
+                          <p class="price">
+                            $33,350<br /><small>prices starting from </small>
+                          </p>
+                          <p class="tech">
+                            <span
+                              ><i class="fa fa-gears" title="Motor power"></i>
+                              <small>200 hp</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-dashboard"
+                                title="0 - 100 km / h acceleration"
+                              ></i>
+                              <small>4,6 s</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-battery-3"
+                                title="Fuel consumption"
+                              ></i>
+                              <small>8,3 lt</small>
+                            </span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-item" href="creation.html">
+                          <img
+                            src="assets/img/models/model5-menu.png"
+                            alt="Model5"
+                          />
+                          <h3>Torres</h3>
+                          <p class="price">
+                            $47,650<br /><small>prices starting from </small>
+                          </p>
+                          <p class="tech">
+                            <span
+                              ><i class="fa fa-gears" title="Motor power"></i>
+                              <small>200 hp</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-dashboard"
+                                title="0 - 100 km / h acceleration"
+                              ></i>
+                              <small>4,6 s</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-battery-3"
+                                title="Fuel consumption"
+                              ></i>
+                              <small>8,3 lt</small>
+                            </span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-item" href="creation.html">
+                          <img
+                            src="assets/img/models/model4-menu.png"
+                            alt="Model4"
+                          />
+                          <h3>Tucson</h3>
+                          <p class="price">
+                            $54,250<br /><small>prices starting from </small>
+                          </p>
+                          <p class="tech">
+                            <span
+                              ><i class="fa fa-gears" title="Motor power"></i>
+                              <small>200 hp</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-dashboard"
+                                title="0 - 100 km / h acceleration"
+                              ></i>
+                              <small>4,6 s</small>
+                            </span>
+                            <span
+                              ><i
+                                class="fa fa-battery-3"
+                                title="Fuel consumption"
+                              ></i>
+                              <small>8,3 lt</small>
+                            </span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="pages-Listing-all-cars.html">Limousine Cars</a>
+                  </li>
+
+                  <li><a href="pages-used-car.html">Used Cars</a></li>
+
+                  <li><a href="pages-used-car.html">Media</a></li>
+
+                  <li><a href="pages-about.html">About</a></li>
+                </ul>
+              </nav>
+              <div id="search" class="search">
+                <form>
+                  <input type="search" placeholder="Search keywords" />
+                </form>
+              </div>
             </div>
-          </div>
-        </header>
+          </header>
+        </div>
+
         <div class="overlay"></div>
-        <div class="row" style="min-height: 89vh; background-color: #1f2021">
-          <div class="col-lg-9 blog-post-items" style="padding: 0">
+        <div
+          class="row white-section"
+          style="min-height: 89vh; background-color: #1f2021"
+        >
+          <div
+            class="col-xl-9 blog-post-items"
+            style="padding: 0; height: 100%"
+          >
             <div class="post-entry">
               <div class="image-container">
                 <div class="section-gallery">
@@ -585,55 +601,79 @@
                     </div>
                   </div>
                 </div>
-                <div class="overlay-text">
-                  <div class="menuContent">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                          <div class="cardCat" onclick="selectCard(0)">
-                            <div class="cardCat-body" style="padding: 10px">
-                              <h5 class="card-title">R-class</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                Choose your feature
-                              </h6>
-                              <p
-                                class="price"
-                                style="text-align: left; margin: 0"
-                              >
-                                EGP33,350<br />
-                              </p>
+                <div class="container">
+                  <div
+                    class="col col-12"
+                    style="justify-content: center; display: flex"
+                  >
+                    <div
+                      class="page-banner-content col"
+                      style="z-index: 9999999999"
+                    >
+                      <!-- breadcrumb -->
+                      <ul
+                        class="page-breadcrumb"
+                        style="
+                          background-color: #0d0d0e;
+                          font-size: 17.7px;
+                          padding: 7px 16px;
+                          left: 30px !important;
+                          right: auto;
+                          transform: translateY(20%);
+                        "
+                      >
+                        <li><a>New Carnival</a></li>
+                      </ul>
+                    </div>
+                    <div class="overlay-text">
+                      <div class="menuContent">
+                        <div class="row">
+                          <div class="col col-4">
+                            <div class="cardCat" onclick="selectCard(0)">
+                              <div class="cardCat-body" style="padding: 10px">
+                                <h5 class="card-title">R-class</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                  Choose your feature
+                                </h6>
+                                <p
+                                  class="price"
+                                  style="text-align: left; margin: 0"
+                                >
+                                  EGP33,350<br />
+                                </p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                          <div class="cardCat" onclick="selectCard(1)">
-                            <div class="cardCat-body" style="padding: 10px">
-                              <h5 class="card-title">VIP</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                Choose your feature
-                              </h6>
-                              <p
-                                class="price"
-                                style="text-align: left; margin: 0"
-                              >
-                                EGP33,350<br />
-                              </p>
+                          <div class="col col-4">
+                            <div class="cardCat" onclick="selectCard(1)">
+                              <div class="cardCat-body" style="padding: 10px">
+                                <h5 class="card-title">VIP</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                  Choose your feature
+                                </h6>
+                                <p
+                                  class="price"
+                                  style="text-align: left; margin: 0"
+                                >
+                                  EGP33,350<br />
+                                </p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                          <div class="cardCat" onclick="selectCard(2)">
-                            <div class="cardCat-body" style="padding: 10px">
-                              <h5 class="card-title">Prime</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                Choose your feature
-                              </h6>
-                              <p
-                                class="price"
-                                style="text-align: left; margin: 0"
-                              >
-                                EGP33,350<br />
-                              </p>
+                          <div class="col col-4">
+                            <div class="cardCat" onclick="selectCard(2)">
+                              <div class="cardCat-body" style="padding: 10px">
+                                <h5 class="card-title">Prime</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                  Choose your feature
+                                </h6>
+                                <p
+                                  class="price"
+                                  style="text-align: left; margin: 0"
+                                >
+                                  EGP33,350<br />
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -644,915 +684,915 @@
               </div>
             </div>
           </div>
+          <button id="toggleButton">
+            <div class="icon">
+              <span class="fa fa-tasks"> </span>
+            </div>
+          </button>
           <div
-            class="col-lg-3 sidebar-blog"
-            style="padding: 0; display: grid; justify-content: center"
+            id="Page"
+            class="col-xl-3 sidebar-blog"
+            style="
+              padding: 0;
+              display: grid;
+              justify-content: center;
+              height: 100%;
+            "
           >
-            <!-- Other content -->
-            <div
-              class="widget"
-              style="
-                height: 100%;
-                width: 100%;
-                display: grid;
-                justify-content: center;
-              "
-            >
-              <div class="section-gallery">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active">
-                    <a
-                      href="#feature"
-                      aria-controls="feature"
-                      role="tab"
-                      data-toggle="tab"
-                      >External</a
-                    >
-                  </li>
-                  <li role="presentation">
-                    <a
-                      href="#gallery"
-                      aria-controls="gallery"
-                      role="tab"
-                      data-toggle="tab"
-                      data-action="gallery"
-                      >Internal</a
-                    >
-                  </li>
-                </ul>
+            <div class="sidebar-blogDrawer">
+              <div
+                class="widget"
+                style="
+                  height: 100%;
+                  width: 100%;
+                  display: grid;
+                  justify-content: center;
+                  width: auto;
+                "
+              >
+                <div class="section-gallery">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                      <a
+                        href="#feature"
+                        aria-controls="feature"
+                        role="tab"
+                        data-toggle="tab"
+                        >External</a
+                      >
+                    </li>
+                    <li role="presentation">
+                      <a
+                        href="#gallery"
+                        aria-controls="gallery"
+                        role="tab"
+                        data-toggle="tab"
+                        data-action="gallery"
+                        >Internal</a
+                      >
+                    </li>
+                  </ul>
 
-                <div class="tab-content">
-                  <div id="mySidebar" class="sidebar">
-                    <a
-                      href="javascript:void(0)"
-                      class="closebtn"
-                      onclick="closeNav()"
-                      >×</a
-                    >
+                  <div class="tab-content">
+                    <div id="mySidebar" class="sidebar">
+                      <a
+                        href="javascript:void(0)"
+                        class="closebtn"
+                        onclick="closeNav()"
+                        >×</a
+                      >
 
-                    <!-- <div id="table" style="padding-top: 50px">
-                      <table>
-                        <tr class="tabletitle">
-                          <td class="item"><h2>Item</h2></td>
-                          <td class="Hours"><h2>Qty</h2></td>
-                          <td class="Rate"><h2>Sub Total</h2></td>
-                        </tr>
-
-                        <tr class="service">
-                          <td class="tableitem">
-                            <p class="itemtext">Communication</p>
-                          </td>
-                          <td class="tableitem"><p class="itemtext">5</p></td>
-                          <td class="tableitem">
-                            <p class="itemtext">$375.00</p>
-                          </td>
-                        </tr>
-
-                        <tr class="service">
-                          <td class="tableitem">
-                            <p class="itemtext">Asset Gathering</p>
-                          </td>
-                          <td class="tableitem"><p class="itemtext">3</p></td>
-                          <td class="tableitem">
-                            <p class="itemtext">$225.00</p>
-                          </td>
-                        </tr>
-
-                        <tr class="service">
-                          <td class="tableitem">
-                            <p class="itemtext">Design Development</p>
-                          </td>
-                          <td class="tableitem"><p class="itemtext">5</p></td>
-                          <td class="tableitem">
-                            <p class="itemtext">$375.00</p>
-                          </td>
-                        </tr>
-
-                        <tr class="service">
-                          <td class="tableitem">
-                            <p class="itemtext">Animation</p>
-                          </td>
-                          <td class="tableitem">
-                            <p class="itemtext">20</p>
-                          </td>
-                          <td class="tableitem">
-                            <p class="itemtext">$1500.00</p>
-                          </td>
-                        </tr>
-
-                        <tr class="service">
-                          <td class="tableitem">
-                            <p class="itemtext">Animation Revisions</p>
-                          </td>
-                          <td class="tableitem">
-                            <p class="itemtext">10</p>
-                          </td>
-                          <td class="tableitem">
-                            <p class="itemtext">$750.00</p>
-                          </td>
-                        </tr>
-
-                        <tr class="tabletitle">
-                          <td></td>
-                          <td class="Rate"><h2>tax</h2></td>
-                          <td class="payment"><h2>$419.25</h2></td>
-                        </tr>
-
-                        <tr class="tabletitle">
-                          <td></td>
-                          <td class="Rate"><h2>Total</h2></td>
-                          <td class="payment"><h2>$3,644.25</h2></td>
-                        </tr>
-                      </table>
-                    </div> -->
-
-                    <div id="table" style="padding-top: 50px">
-                      <table>
-                        <tr class="tabletitle">
-                          <td class="item"><h2>Item</h2></td>
-                          <td class="Hours"><h2>Qty</h2></td>
-                          <td class="Rate"><h2>Sub Total</h2></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div id="main">
-                    <section class="sidebar-navigation">
-                      <div class="cav">
-                        <ul class="level-1 list-1">
-                          <!-- 11111111 -->
-                          <li class="parent">
-                            <a class="headParent" href="#">
-                              <div class="cardFea">
-                                <div class="cardCat-body">
-                                  <img
-                                    src="http://placehold.it/64x64"
-                                    class="float-left rounded-circle"
-                                  />
-                                  <div class="message">
-                                    <div class="d-flex justify-content-between">
-                                      <h1 class="card-title">Prestige</h1>
-                                      <div class="icon">
-                                        <span class="fa fa-angle-right"> </span>
-                                      </div>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                      Choose your car
-                                    </h6>
-                                    <p
-                                      class="price"
-                                      style="text-align: left; margin: 0"
-                                    >
-                                      EGP33,350<br />
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-
-                            <ul class="level-2 ks-cboxtags">
-                              <li class="back"><a href="#">Back</a></li>
-
-                              <li>
-                                <a href="#">
-                                  <div class="cardFea">
-                                    <div class="cardCat-body">
-                                      <input
-                                        type="checkbox"
-                                        id="Prestige1"
-                                        onclick="handleCheckboxChange(this)"
-                                        value="1"
-                                      /><label for="Prestige1">
-                                        <img
-                                          src="http://placehold.it/64x64"
-                                          class="float-left rounded-circle"
-                                        />
-                                        <div class="message">
-                                          <h1 class="card-title">Prestige1</h1>
-                                          <h6
-                                            class="card-subtitle mb-2 text-muted"
-                                          >
-                                            Choose your feature
-                                          </h6>
-                                          <p
-                                            class="price"
-                                            style="text-align: left; margin: 0"
-                                          >
-                                            EGP33,350<br />
-                                          </p>
-                                        </div>
-                                      </label>
-                                    </div>
-                                  </div>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="cardFea">
-                                    <div class="cardCat-body">
-                                      <input
-                                        type="checkbox"
-                                        id="Prestige2"
-                                        onclick="handleCheckboxChange(this)"
-                                        value="1"
-                                      /><label for="Prestige2">
-                                        <img
-                                          src="http://placehold.it/64x64"
-                                          class="float-left rounded-circle"
-                                        />
-                                        <div class="message">
-                                          <h5 class="card-title">Prestige2</h5>
-                                          <h6
-                                            class="card-subtitle mb-2 text-muted"
-                                          >
-                                            Choose your feature
-                                          </h6>
-                                          <p
-                                            class="price"
-                                            style="text-align: left; margin: 0"
-                                          >
-                                            EGP33,350<br />
-                                          </p>
-                                        </div>
-                                      </label>
-                                    </div>
-                                  </div>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="cardFea">
-                                    <div class="cardCat-body">
-                                      <input
-                                        type="checkbox"
-                                        id="Prestige3"
-                                        onclick="handleCheckboxChange(this)"
-                                        value="1"
-                                      /><label for="Prestige3">
-                                        <img
-                                          src="http://placehold.it/64x64"
-                                          class="float-left rounded-circle"
-                                        />
-                                        <div class="message">
-                                          <h5 class="card-title">Prestige3</h5>
-                                          <h6
-                                            class="card-subtitle mb-2 text-muted"
-                                          >
-                                            Choose your feature
-                                          </h6>
-                                          <p
-                                            class="price"
-                                            style="text-align: left; margin: 0"
-                                          >
-                                            EGP33,350<br />
-                                          </p>
-                                        </div>
-                                      </label>
-                                    </div>
-                                  </div>
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="parent">
-                            <a class="headParent" href="#">
-                              <div class="cardFea">
-                                <div class="cardCat-body">
-                                  <img
-                                    src="http://placehold.it/64x64"
-                                    class="float-left rounded-circle"
-                                  />
-                                  <div class="message">
-                                    <div class="d-flex justify-content-between">
-                                      <h1 class="card-title">Nobless</h1>
-                                      <div class="icon">
-                                        <span class="fa fa-angle-right"> </span>
-                                      </div>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                      Choose your car
-                                    </h6>
-                                    <p
-                                      class="price"
-                                      style="text-align: left; margin: 0"
-                                    >
-                                      EGP33,350<br />
-                                    </p>
-                                  </div>
-                                </div></div
-                            ></a>
-                            <ul class="level-2">
-                              <li class="back"><a href="#">Back</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li class="parent">
-                                <a href="#">Level 2 Parent</a>
-                                <ul class="level-3">
-                                  <li class="back"><a href="#">Back</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                            </ul>
-                          </li>
-                          <li class="parent">
-                            <a class="headParent" href="#">
-                              <div class="cardFea">
-                                <div class="cardCat-body">
-                                  <img
-                                    src="http://placehold.it/64x64"
-                                    class="float-left rounded-circle"
-                                  />
-                                  <div class="message">
-                                    <div class="d-flex justify-content-between">
-                                      <h1 class="card-title">Signature</h1>
-                                      <div class="icon">
-                                        <span class="fa fa-angle-right"> </span>
-                                      </div>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                      Choose your car
-                                    </h6>
-                                    <p
-                                      class="price"
-                                      style="text-align: left; margin: 0"
-                                    >
-                                      EGP33,350<br />
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-
-                            <ul class="level-2">
-                              <li class="back"><a href="#">Back</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li class="parent">
-                                <a href="#">Level 2 Parent</a>
-                                <ul class="level-3">
-                                  <li class="back"><a href="#">Back</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="#">Level 2 Item</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                        <ul class="level-1 list-2">
-                          <!-- 22222222222 -->
-                          <li class="parent">
-                            <a class="headParent" href="#">
-                              <div class="cardFea">
-                                <div class="cardCat-body">
-                                  <img
-                                    src="http://placehold.it/64x64"
-                                    class="float-left rounded-circle"
-                                  />
-                                  <div class="message">
-                                    <div class="d-flex justify-content-between">
-                                      <h1 class="card-title">Prestige</h1>
-                                      <div class="icon">
-                                        <span class="fa fa-angle-right"> </span>
-                                      </div>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                      Choose your car
-                                    </h6>
-                                    <p
-                                      class="price"
-                                      style="text-align: left; margin: 0"
-                                    >
-                                      EGP33,350<br />
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-
-                            <ul class="level-2">
-                              <li class="back"><a href="#">Back</a></li>
-                              <li>
-                                <a href="#">
-                                  <div class="cardFea">
-                                    <div class="cardCat-body">
-                                      <img
-                                        src="http://placehold.it/64x64"
-                                        class="float-left rounded-circle"
-                                      />
-                                      <div class="message">
-                                        <h1 class="card-title">Nobless</h1>
-                                        <h6
-                                          class="card-subtitle mb-2 text-muted"
-                                        >
-                                          Choose you feature
-                                        </h6>
-                                        <p
-                                          class="price"
-                                          style="text-align: left; margin: 0"
-                                        >
-                                          EGP33,350<br />
-                                        </p>
-                                      </div>
-                                    </div></div
-                                ></a>
-                                <ul class="level-3">
-                                  <li class="back"><a href="#">Back</a></li>
-                                  <li>
-                                    <a href="#" id="image-link-R-Class">
-                                      <div class="cardFea">
-                                        <div class="cardCat-body">
-                                          <img
-                                            src="http://placehold.it/64x64"
-                                            class="float-left rounded-circle"
-                                          />
-                                          <div class="message">
-                                            <h5 class="card-title">R-Class</h5>
-                                            <h6
-                                              class="card-subtitle mb-2 text-muted"
-                                            >
-                                              Describtion
-                                            </h6>
-                                          </div>
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" id="image-link-V-I-P"
-                                      ><div class="cardFea">
-                                        <div class="cardCat-body">
-                                          <img
-                                            src="http://placehold.it/64x64"
-                                            class="float-left rounded-circle"
-                                          />
-                                          <div class="message">
-                                            <h5 class="card-title">Nobless</h5>
-                                            <h6
-                                              class="card-subtitle mb-2 text-muted"
-                                            >
-                                              Describtion
-                                            </h6>
-                                          </div>
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-
-                                  <li>
-                                    <a href="#"
-                                      ><div class="cardFea">
-                                        <div class="cardCat-body">
-                                          <img
-                                            src="http://placehold.it/64x64"
-                                            class="float-left rounded-circle"
-                                          />
-                                          <div class="message">
-                                            <h5 class="card-title">Prime</h5>
-                                            <h6
-                                              class="card-subtitle mb-2 text-muted"
-                                            >
-                                              Describtion
-                                            </h6>
-                                          </div>
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="cardFea">
-                                    <div class="cardCat-body">
-                                      <img
-                                        src="http://placehold.it/64x64"
-                                        class="float-left rounded-circle"
-                                      />
-                                      <div class="message">
-                                        <h5 class="card-title">Noblesse</h5>
-                                        <h6
-                                          class="card-subtitle mb-2 text-muted"
-                                        >
-                                          Choose you feature
-                                        </h6>
-                                        <p
-                                          class="price"
-                                          style="text-align: left; margin: 0"
-                                        >
-                                          EGP33,350<br />
-                                        </p>
-                                      </div>
-                                    </div></div
-                                ></a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="cardFea">
-                                    <div class="cardCat-body">
-                                      <img
-                                        src="http://placehold.it/64x64"
-                                        class="float-left rounded-circle"
-                                      />
-                                      <div class="message">
-                                        <h5 class="card-title">Signature</h5>
-                                        <h6
-                                          class="card-subtitle mb-2 text-muted"
-                                        >
-                                          Choose you feature
-                                        </h6>
-                                        <p
-                                          class="price"
-                                          style="text-align: left; margin: 0"
-                                        >
-                                          EGP33,350<br />
-                                        </p>
-                                      </div>
-                                    </div></div
-                                ></a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="parent">
-                            <a class="headParent" href="#">
-                              <div class="cardFea">
-                                <div class="cardCat-body">
-                                  <img
-                                    src="http://placehold.it/64x64"
-                                    class="float-left rounded-circle"
-                                  />
-                                  <div class="message">
-                                    <div class="d-flex justify-content-between">
-                                      <h1 class="card-title">Nobless</h1>
-                                      <div class="icon">
-                                        <span class="fa fa-angle-right"> </span>
-                                      </div>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                      Choose your car
-                                    </h6>
-                                    <p
-                                      class="price"
-                                      style="text-align: left; margin: 0"
-                                    >
-                                      EGP33,350<br />
-                                    </p>
-                                  </div>
-                                </div></div
-                            ></a>
-                            <ul class="level-2">
-                              <li class="back"><a href="#">Back</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li class="parent">
-                                <a href="#">Level 2 Parent</a>
-                                <ul class="level-3">
-                                  <li class="back"><a href="#">Back</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                            </ul>
-                          </li>
-                          <li class="parent">
-                            <a class="headParent" href="#">
-                              <div class="cardFea">
-                                <div class="cardCat-body">
-                                  <img
-                                    src="http://placehold.it/64x64"
-                                    class="float-left rounded-circle"
-                                  />
-                                  <div class="message">
-                                    <div class="d-flex justify-content-between">
-                                      <h1 class="card-title">Signature</h1>
-                                      <div class="icon">
-                                        <span class="fa fa-angle-right"> </span>
-                                      </div>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                      Choose your car
-                                    </h6>
-                                    <p
-                                      class="price"
-                                      style="text-align: left; margin: 0"
-                                    >
-                                      EGP33,350<br />
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-
-                            <ul class="level-2">
-                              <li class="back"><a href="#">Back</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li class="parent">
-                                <a href="#">Level 2 Parent</a>
-                                <ul class="level-3">
-                                  <li class="back"><a href="#">Back</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="#">Level 2 Item</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                        <ul class="level-1 list-3">
-                          <!-- 33333 -->
-                          <li class="parent">
-                            <a class="headParent" href="#">
-                              <div class="cardFea">
-                                <div class="cardCat-body">
-                                  <img
-                                    src="http://placehold.it/64x64"
-                                    class="float-left rounded-circle"
-                                  />
-                                  <div class="message">
-                                    <div class="d-flex justify-content-between">
-                                      <h1 class="card-title">Prestige</h1>
-                                      <div class="icon">
-                                        <span class="fa fa-angle-right"> </span>
-                                      </div>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                      Choose your car
-                                    </h6>
-                                    <p
-                                      class="price"
-                                      style="text-align: left; margin: 0"
-                                    >
-                                      EGP33,350<br />
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-
-                            <ul class="level-2">
-                              <li class="back"><a href="#">Back</a></li>
-                              <li>
-                                <a href="#">
-                                  <div class="cardFea">
-                                    <div class="cardCat-body">
-                                      <img
-                                        src="http://placehold.it/64x64"
-                                        class="float-left rounded-circle"
-                                      />
-                                      <div class="message">
-                                        <h1 class="card-title">Nobless</h1>
-                                        <h6
-                                          class="card-subtitle mb-2 text-muted"
-                                        >
-                                          Choose you feature
-                                        </h6>
-                                        <p
-                                          class="price"
-                                          style="text-align: left; margin: 0"
-                                        >
-                                          EGP33,350<br />
-                                        </p>
-                                      </div>
-                                    </div></div
-                                ></a>
-                                <ul class="level-3">
-                                  <li class="back"><a href="#">Back</a></li>
-                                  <li>
-                                    <a href="#" id="image-link-R-Class">
-                                      <div class="cardFea">
-                                        <div class="cardCat-body">
-                                          <img
-                                            src="http://placehold.it/64x64"
-                                            class="float-left rounded-circle"
-                                          />
-                                          <div class="message">
-                                            <h5 class="card-title">R-Class</h5>
-                                            <h6
-                                              class="card-subtitle mb-2 text-muted"
-                                            >
-                                              Describtion
-                                            </h6>
-                                          </div>
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#" id="image-link-V-I-P"
-                                      ><div class="cardFea">
-                                        <div class="cardCat-body">
-                                          <img
-                                            src="http://placehold.it/64x64"
-                                            class="float-left rounded-circle"
-                                          />
-                                          <div class="message">
-                                            <h5 class="card-title">Nobless</h5>
-                                            <h6
-                                              class="card-subtitle mb-2 text-muted"
-                                            >
-                                              Describtion
-                                            </h6>
-                                          </div>
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-
-                                  <li>
-                                    <a href="#"
-                                      ><div class="cardFea">
-                                        <div class="cardCat-body">
-                                          <img
-                                            src="http://placehold.it/64x64"
-                                            class="float-left rounded-circle"
-                                          />
-                                          <div class="message">
-                                            <h5 class="card-title">Prime</h5>
-                                            <h6
-                                              class="card-subtitle mb-2 text-muted"
-                                            >
-                                              Describtion
-                                            </h6>
-                                          </div>
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="cardFea">
-                                    <div class="cardCat-body">
-                                      <img
-                                        src="http://placehold.it/64x64"
-                                        class="float-left rounded-circle"
-                                      />
-                                      <div class="message">
-                                        <h5 class="card-title">Noblesse</h5>
-                                        <h6
-                                          class="card-subtitle mb-2 text-muted"
-                                        >
-                                          Choose you feature
-                                        </h6>
-                                        <p
-                                          class="price"
-                                          style="text-align: left; margin: 0"
-                                        >
-                                          EGP33,350<br />
-                                        </p>
-                                      </div>
-                                    </div></div
-                                ></a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="cardFea">
-                                    <div class="cardCat-body">
-                                      <img
-                                        src="http://placehold.it/64x64"
-                                        class="float-left rounded-circle"
-                                      />
-                                      <div class="message">
-                                        <h5 class="card-title">Signature</h5>
-                                        <h6
-                                          class="card-subtitle mb-2 text-muted"
-                                        >
-                                          Choose you feature
-                                        </h6>
-                                        <p
-                                          class="price"
-                                          style="text-align: left; margin: 0"
-                                        >
-                                          EGP33,350<br />
-                                        </p>
-                                      </div>
-                                    </div></div
-                                ></a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="parent">
-                            <a class="headParent" href="#">
-                              <div class="cardFea">
-                                <div class="cardCat-body">
-                                  <img
-                                    src="http://placehold.it/64x64"
-                                    class="float-left rounded-circle"
-                                  />
-                                  <div class="message">
-                                    <div class="d-flex justify-content-between">
-                                      <h1 class="card-title">Nobless</h1>
-                                      <div class="icon">
-                                        <span class="fa fa-angle-right"> </span>
-                                      </div>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                      Choose your car
-                                    </h6>
-                                    <p
-                                      class="price"
-                                      style="text-align: left; margin: 0"
-                                    >
-                                      EGP33,350<br />
-                                    </p>
-                                  </div>
-                                </div></div
-                            ></a>
-                            <ul class="level-2">
-                              <li class="back"><a href="#">Back</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li class="parent">
-                                <a href="#">Level 2 Parent</a>
-                                <ul class="level-3">
-                                  <li class="back"><a href="#">Back</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                            </ul>
-                          </li>
-                          <li class="parent">
-                            <a class="headParent" href="#">
-                              <div class="cardFea">
-                                <div class="cardCat-body">
-                                  <img
-                                    src="http://placehold.it/64x64"
-                                    class="float-left rounded-circle"
-                                  />
-                                  <div class="message">
-                                    <div class="d-flex justify-content-between">
-                                      <h1 class="card-title">Signature</h1>
-                                      <div class="icon">
-                                        <span class="fa fa-angle-right"> </span>
-                                      </div>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">
-                                      Choose your car
-                                    </h6>
-                                    <p
-                                      class="price"
-                                      style="text-align: left; margin: 0"
-                                    >
-                                      EGP33,350<br />
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-
-                            <ul class="level-2">
-                              <li class="back"><a href="#">Back</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li><a href="#">Level 2 Item</a></li>
-                              <li class="parent">
-                                <a href="#">Level 2 Parent</a>
-                                <ul class="level-3">
-                                  <li class="back"><a href="#">Back</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                  <li><a href="#">Level 3 Item</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="#">Level 2 Item</a></li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <div id="table" style="padding-top: 50px">
+                        <table>
+                          <tr class="tabletitle">
+                            <td class="item"><h2>Item</h2></td>
+                            <td class="Hours"><h2>Qty</h2></td>
+                            <td class="Rate"><h2>Sub Total</h2></td>
+                          </tr>
+                        </table>
                       </div>
-                    </section>
+                    </div>
+                    <div id="main">
+                      <section class="sidebar-navigation">
+                        <div class="cav">
+                          <ul class="level-1 list-1">
+                            <!-- 11111111 -->
+                            <li class="parent">
+                              <a class="headParent">
+                                <div class="cardFea">
+                                  <div class="cardCat-body">
+                                    <img
+                                      src="http://placehold.it/64x64"
+                                      class="float-left rounded-circle"
+                                    />
+                                    <div class="message">
+                                      <div
+                                        class="d-flex justify-content-between"
+                                      >
+                                        <h1 class="card-title">Prestige</h1>
+                                        <div class="icon">
+                                          <span class="fa fa-angle-right">
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <h6 class="card-subtitle mb-2 text-muted">
+                                        Choose your car
+                                      </h6>
+                                      <p
+                                        class="price"
+                                        style="text-align: left; margin: 0"
+                                      >
+                                        EGP33,350<br />
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
 
-                    <button class="openbtn" onclick="openNav()">
-                      Compelete Your teps
-                    </button>
+                              <ul class="level-2 ks-cboxtags">
+                                <div class="d-flex justify-content-start">
+                                  <li class="back">
+                                    <a>
+                                      <button class="icon">
+                                        <div>
+                                          <span class="fa fa-angle-left">
+                                          </span>
+                                        </div>
+                                      </button>
+                                    </a>
+                                  </li>
+                                  <h1 class="card-title margin-left-5">
+                                    Prestige
+                                  </h1>
+                                </div>
+                                <li>
+                                  <a>
+                                    <div class="cardFea">
+                                      <div class="cardCat-body">
+                                        <input
+                                          type="checkbox"
+                                          id="Prestige1"
+                                          onclick="handleCheckboxChange(this)"
+                                          value="1"
+                                        /><label for="Prestige1">
+                                          <img
+                                            src="http://placehold.it/64x64"
+                                            class="float-left rounded-circle"
+                                          />
+                                          <div class="message">
+                                            <h1 class="card-title">
+                                              Prestige1
+                                            </h1>
+                                            <h6
+                                              class="card-subtitle mb-2 text-muted"
+                                            >
+                                              Choose your feature
+                                            </h6>
+                                            <p
+                                              class="price"
+                                              style="
+                                                text-align: left;
+                                                margin: 0;
+                                              "
+                                            >
+                                              EGP33,350<br />
+                                            </p>
+                                          </div>
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <div class="cardFea">
+                                      <div class="cardCat-body">
+                                        <input
+                                          type="checkbox"
+                                          id="Prestige2"
+                                          onclick="handleCheckboxChange(this)"
+                                          value="1"
+                                        /><label for="Prestige2">
+                                          <img
+                                            src="http://placehold.it/64x64"
+                                            class="float-left rounded-circle"
+                                          />
+                                          <div class="message">
+                                            <h5 class="card-title">
+                                              Prestige2
+                                            </h5>
+                                            <h6
+                                              class="card-subtitle mb-2 text-muted"
+                                            >
+                                              Choose your feature
+                                            </h6>
+                                            <p
+                                              class="price"
+                                              style="
+                                                text-align: left;
+                                                margin: 0;
+                                              "
+                                            >
+                                              EGP33,350<br />
+                                            </p>
+                                          </div>
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <div class="cardFea">
+                                      <div class="cardCat-body">
+                                        <input
+                                          type="checkbox"
+                                          id="Prestige3"
+                                          onclick="handleCheckboxChange(this)"
+                                          value="1"
+                                        /><label for="Prestige3">
+                                          <img
+                                            src="http://placehold.it/64x64"
+                                            class="float-left rounded-circle"
+                                          />
+                                          <div class="message">
+                                            <h5 class="card-title">
+                                              Prestige3
+                                            </h5>
+                                            <h6
+                                              class="card-subtitle mb-2 text-muted"
+                                            >
+                                              Choose your feature
+                                            </h6>
+                                            <p
+                                              class="price"
+                                              style="
+                                                text-align: left;
+                                                margin: 0;
+                                              "
+                                            >
+                                              EGP33,350<br />
+                                            </p>
+                                          </div>
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="parent">
+                              <a class="headParent">
+                                <div class="cardFea">
+                                  <div class="cardCat-body">
+                                    <img
+                                      src="http://placehold.it/64x64"
+                                      class="float-left rounded-circle"
+                                    />
+                                    <div class="message">
+                                      <div
+                                        class="d-flex justify-content-between"
+                                      >
+                                        <h1 class="card-title">Nobless</h1>
+                                        <div class="icon">
+                                          <span class="fa fa-angle-right">
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <h6 class="card-subtitle mb-2 text-muted">
+                                        Choose your car
+                                      </h6>
+                                      <p
+                                        class="price"
+                                        style="text-align: left; margin: 0"
+                                      >
+                                        EGP33,350<br />
+                                      </p>
+                                    </div>
+                                  </div></div
+                              ></a>
+                              <ul class="level-2">
+                                <li class="back"><a>Back</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li class="parent">
+                                  <a>Level 2 Parent</a>
+                                  <ul class="level-3">
+                                    <li class="back"><a>Back</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                  </ul>
+                                </li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                              </ul>
+                            </li>
+                            <li class="parent">
+                              <a class="headParent">
+                                <div class="cardFea">
+                                  <div class="cardCat-body">
+                                    <img
+                                      src="http://placehold.it/64x64"
+                                      class="float-left rounded-circle"
+                                    />
+                                    <div class="message">
+                                      <div
+                                        class="d-flex justify-content-between"
+                                      >
+                                        <h1 class="card-title">Signature</h1>
+                                        <div class="icon">
+                                          <span class="fa fa-angle-right">
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <h6 class="card-subtitle mb-2 text-muted">
+                                        Choose your car
+                                      </h6>
+                                      <p
+                                        class="price"
+                                        style="text-align: left; margin: 0"
+                                      >
+                                        EGP33,350<br />
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+
+                              <ul class="level-2">
+                                <li class="back"><a>Back</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li class="parent">
+                                  <a>Level 2 Parent</a>
+                                  <ul class="level-3">
+                                    <li class="back"><a>Back</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                  </ul>
+                                </li>
+                                <li><a>Level 2 Item</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <ul class="level-1 list-2">
+                            <!-- 22222222222 -->
+                            <li class="parent">
+                              <a class="headParent">
+                                <div class="cardFea">
+                                  <div class="cardCat-body">
+                                    <img
+                                      src="http://placehold.it/64x64"
+                                      class="float-left rounded-circle"
+                                    />
+                                    <div class="message">
+                                      <div
+                                        class="d-flex justify-content-between"
+                                      >
+                                        <h1 class="card-title">Prestige</h1>
+                                        <div class="icon">
+                                          <span class="fa fa-angle-right">
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <h6 class="card-subtitle mb-2 text-muted">
+                                        Choose your car
+                                      </h6>
+                                      <p
+                                        class="price"
+                                        style="text-align: left; margin: 0"
+                                      >
+                                        EGP33,350<br />
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+
+                              <ul class="level-2">
+                                <li class="back"><a>Back</a></li>
+                                <li>
+                                  <a>
+                                    <div class="cardFea">
+                                      <div class="cardCat-body">
+                                        <img
+                                          src="http://placehold.it/64x64"
+                                          class="float-left rounded-circle"
+                                        />
+                                        <div class="message">
+                                          <h1 class="card-title">Nobless</h1>
+                                          <h6
+                                            class="card-subtitle mb-2 text-muted"
+                                          >
+                                            Choose you feature
+                                          </h6>
+                                          <p
+                                            class="price"
+                                            style="text-align: left; margin: 0"
+                                          >
+                                            EGP33,350<br />
+                                          </p>
+                                        </div>
+                                      </div></div
+                                  ></a>
+                                  <ul class="level-3">
+                                    <li class="back"><a>Back</a></li>
+                                    <li>
+                                      <a id="image-link-R-Class">
+                                        <div class="cardFea">
+                                          <div class="cardCat-body">
+                                            <img
+                                              src="http://placehold.it/64x64"
+                                              class="float-left rounded-circle"
+                                            />
+                                            <div class="message">
+                                              <h5 class="card-title">
+                                                R-Class
+                                              </h5>
+                                              <h6
+                                                class="card-subtitle mb-2 text-muted"
+                                              >
+                                                Describtion
+                                              </h6>
+                                            </div>
+                                          </div>
+                                        </div></a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a id="image-link-V-I-P"
+                                        ><div class="cardFea">
+                                          <div class="cardCat-body">
+                                            <img
+                                              src="http://placehold.it/64x64"
+                                              class="float-left rounded-circle"
+                                            />
+                                            <div class="message">
+                                              <h5 class="card-title">
+                                                Nobless
+                                              </h5>
+                                              <h6
+                                                class="card-subtitle mb-2 text-muted"
+                                              >
+                                                Describtion
+                                              </h6>
+                                            </div>
+                                          </div>
+                                        </div></a
+                                      >
+                                    </li>
+
+                                    <li>
+                                      <a
+                                        ><div class="cardFea">
+                                          <div class="cardCat-body">
+                                            <img
+                                              src="http://placehold.it/64x64"
+                                              class="float-left rounded-circle"
+                                            />
+                                            <div class="message">
+                                              <h5 class="card-title">Prime</h5>
+                                              <h6
+                                                class="card-subtitle mb-2 text-muted"
+                                              >
+                                                Describtion
+                                              </h6>
+                                            </div>
+                                          </div>
+                                        </div></a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a>
+                                    <div class="cardFea">
+                                      <div class="cardCat-body">
+                                        <img
+                                          src="http://placehold.it/64x64"
+                                          class="float-left rounded-circle"
+                                        />
+                                        <div class="message">
+                                          <h5 class="card-title">Noblesse</h5>
+                                          <h6
+                                            class="card-subtitle mb-2 text-muted"
+                                          >
+                                            Choose you feature
+                                          </h6>
+                                          <p
+                                            class="price"
+                                            style="text-align: left; margin: 0"
+                                          >
+                                            EGP33,350<br />
+                                          </p>
+                                        </div>
+                                      </div></div
+                                  ></a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <div class="cardFea">
+                                      <div class="cardCat-body">
+                                        <img
+                                          src="http://placehold.it/64x64"
+                                          class="float-left rounded-circle"
+                                        />
+                                        <div class="message">
+                                          <h5 class="card-title">Signature</h5>
+                                          <h6
+                                            class="card-subtitle mb-2 text-muted"
+                                          >
+                                            Choose you feature
+                                          </h6>
+                                          <p
+                                            class="price"
+                                            style="text-align: left; margin: 0"
+                                          >
+                                            EGP33,350<br />
+                                          </p>
+                                        </div>
+                                      </div></div
+                                  ></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="parent">
+                              <a class="headParent">
+                                <div class="cardFea">
+                                  <div class="cardCat-body">
+                                    <img
+                                      src="http://placehold.it/64x64"
+                                      class="float-left rounded-circle"
+                                    />
+                                    <div class="message">
+                                      <div
+                                        class="d-flex justify-content-between"
+                                      >
+                                        <h1 class="card-title">Nobless</h1>
+                                        <div class="icon">
+                                          <span class="fa fa-angle-right">
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <h6 class="card-subtitle mb-2 text-muted">
+                                        Choose your car
+                                      </h6>
+                                      <p
+                                        class="price"
+                                        style="text-align: left; margin: 0"
+                                      >
+                                        EGP33,350<br />
+                                      </p>
+                                    </div>
+                                  </div></div
+                              ></a>
+                              <ul class="level-2">
+                                <li class="back"><a>Back</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li class="parent">
+                                  <a>Level 2 Parent</a>
+                                  <ul class="level-3">
+                                    <li class="back"><a>Back</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                  </ul>
+                                </li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                              </ul>
+                            </li>
+                            <li class="parent">
+                              <a class="headParent">
+                                <div class="cardFea">
+                                  <div class="cardCat-body">
+                                    <img
+                                      src="http://placehold.it/64x64"
+                                      class="float-left rounded-circle"
+                                    />
+                                    <div class="message">
+                                      <div
+                                        class="d-flex justify-content-between"
+                                      >
+                                        <h1 class="card-title">Signature</h1>
+                                        <div class="icon">
+                                          <span class="fa fa-angle-right">
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <h6 class="card-subtitle mb-2 text-muted">
+                                        Choose your car
+                                      </h6>
+                                      <p
+                                        class="price"
+                                        style="text-align: left; margin: 0"
+                                      >
+                                        EGP33,350<br />
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+
+                              <ul class="level-2">
+                                <li class="back"><a>Back</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li class="parent">
+                                  <a>Level 2 Parent</a>
+                                  <ul class="level-3">
+                                    <li class="back"><a>Back</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                  </ul>
+                                </li>
+                                <li><a>Level 2 Item</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <ul class="level-1 list-3">
+                            <!-- 33333 -->
+                            <li class="parent">
+                              <a class="headParent">
+                                <div class="cardFea">
+                                  <div class="cardCat-body">
+                                    <img
+                                      src="http://placehold.it/64x64"
+                                      class="float-left rounded-circle"
+                                    />
+                                    <div class="message">
+                                      <div
+                                        class="d-flex justify-content-between"
+                                      >
+                                        <h1 class="card-title">Prestige</h1>
+                                        <div class="icon">
+                                          <span class="fa fa-angle-right">
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <h6 class="card-subtitle mb-2 text-muted">
+                                        Choose your car
+                                      </h6>
+                                      <p
+                                        class="price"
+                                        style="text-align: left; margin: 0"
+                                      >
+                                        EGP33,350<br />
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+
+                              <ul class="level-2">
+                                <li class="back"><a>Back</a></li>
+                                <li>
+                                  <a>
+                                    <div class="cardFea">
+                                      <div class="cardCat-body">
+                                        <img
+                                          src="http://placehold.it/64x64"
+                                          class="float-left rounded-circle"
+                                        />
+                                        <div class="message">
+                                          <h1 class="card-title">Nobless</h1>
+                                          <h6
+                                            class="card-subtitle mb-2 text-muted"
+                                          >
+                                            Choose you feature
+                                          </h6>
+                                          <p
+                                            class="price"
+                                            style="text-align: left; margin: 0"
+                                          >
+                                            EGP33,350<br />
+                                          </p>
+                                        </div>
+                                      </div></div
+                                  ></a>
+                                  <ul class="level-3">
+                                    <li class="back"><a>Back</a></li>
+                                    <li>
+                                      <a id="image-link-R-Class">
+                                        <div class="cardFea">
+                                          <div class="cardCat-body">
+                                            <img
+                                              src="http://placehold.it/64x64"
+                                              class="float-left rounded-circle"
+                                            />
+                                            <div class="message">
+                                              <h5 class="card-title">
+                                                R-Class
+                                              </h5>
+                                              <h6
+                                                class="card-subtitle mb-2 text-muted"
+                                              >
+                                                Describtion
+                                              </h6>
+                                            </div>
+                                          </div>
+                                        </div></a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a id="image-link-V-I-P"
+                                        ><div class="cardFea">
+                                          <div class="cardCat-body">
+                                            <img
+                                              src="http://placehold.it/64x64"
+                                              class="float-left rounded-circle"
+                                            />
+                                            <div class="message">
+                                              <h5 class="card-title">
+                                                Nobless
+                                              </h5>
+                                              <h6
+                                                class="card-subtitle mb-2 text-muted"
+                                              >
+                                                Describtion
+                                              </h6>
+                                            </div>
+                                          </div>
+                                        </div></a
+                                      >
+                                    </li>
+
+                                    <li>
+                                      <a
+                                        ><div class="cardFea">
+                                          <div class="cardCat-body">
+                                            <img
+                                              src="http://placehold.it/64x64"
+                                              class="float-left rounded-circle"
+                                            />
+                                            <div class="message">
+                                              <h5 class="card-title">Prime</h5>
+                                              <h6
+                                                class="card-subtitle mb-2 text-muted"
+                                              >
+                                                Describtion
+                                              </h6>
+                                            </div>
+                                          </div>
+                                        </div></a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a>
+                                    <div class="cardFea">
+                                      <div class="cardCat-body">
+                                        <img
+                                          src="http://placehold.it/64x64"
+                                          class="float-left rounded-circle"
+                                        />
+                                        <div class="message">
+                                          <h5 class="card-title">Noblesse</h5>
+                                          <h6
+                                            class="card-subtitle mb-2 text-muted"
+                                          >
+                                            Choose you feature
+                                          </h6>
+                                          <p
+                                            class="price"
+                                            style="text-align: left; margin: 0"
+                                          >
+                                            EGP33,350<br />
+                                          </p>
+                                        </div>
+                                      </div></div
+                                  ></a>
+                                </li>
+                                <li>
+                                  <a>
+                                    <div class="cardFea">
+                                      <div class="cardCat-body">
+                                        <img
+                                          src="http://placehold.it/64x64"
+                                          class="float-left rounded-circle"
+                                        />
+                                        <div class="message">
+                                          <h5 class="card-title">Signature</h5>
+                                          <h6
+                                            class="card-subtitle mb-2 text-muted"
+                                          >
+                                            Choose you feature
+                                          </h6>
+                                          <p
+                                            class="price"
+                                            style="text-align: left; margin: 0"
+                                          >
+                                            EGP33,350<br />
+                                          </p>
+                                        </div>
+                                      </div></div
+                                  ></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="parent">
+                              <a class="headParent">
+                                <div class="cardFea">
+                                  <div class="cardCat-body">
+                                    <img
+                                      src="http://placehold.it/64x64"
+                                      class="float-left rounded-circle"
+                                    />
+                                    <div class="message">
+                                      <div
+                                        class="d-flex justify-content-between"
+                                      >
+                                        <h1 class="card-title">Nobless</h1>
+                                        <div class="icon">
+                                          <span class="fa fa-angle-right">
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <h6 class="card-subtitle mb-2 text-muted">
+                                        Choose your car
+                                      </h6>
+                                      <p
+                                        class="price"
+                                        style="text-align: left; margin: 0"
+                                      >
+                                        EGP33,350<br />
+                                      </p>
+                                    </div>
+                                  </div></div
+                              ></a>
+                              <ul class="level-2">
+                                <li class="back"><a>Back</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li class="parent">
+                                  <a>Level 2 Parent</a>
+                                  <ul class="level-3">
+                                    <li class="back"><a>Back</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                  </ul>
+                                </li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                              </ul>
+                            </li>
+                            <li class="parent">
+                              <a class="headParent">
+                                <div class="cardFea">
+                                  <div class="cardCat-body">
+                                    <img
+                                      src="http://placehold.it/64x64"
+                                      class="float-left rounded-circle"
+                                    />
+                                    <div class="message">
+                                      <div
+                                        class="d-flex justify-content-between"
+                                      >
+                                        <h1 class="card-title">Signature</h1>
+                                        <div class="icon">
+                                          <span class="fa fa-angle-right">
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <h6 class="card-subtitle mb-2 text-muted">
+                                        Choose your car
+                                      </h6>
+                                      <p
+                                        class="price"
+                                        style="text-align: left; margin: 0"
+                                      >
+                                        EGP33,350<br />
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+
+                              <ul class="level-2">
+                                <li class="back"><a>Back</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li><a>Level 2 Item</a></li>
+                                <li class="parent">
+                                  <a>Level 2 Parent</a>
+                                  <ul class="level-3">
+                                    <li class="back"><a>Back</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                    <li><a>Level 3 Item</a></li>
+                                  </ul>
+                                </li>
+                                <li><a>Level 2 Item</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+
+                      <button class="openbtn" onclick="openNavTotal()">
+                        Compelete Your teps
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1562,16 +1602,16 @@
         <!-- <div class="cta-bar">
           <ul>
             <li>
-              <a href="#"><i class="fa fa-map-pin"></i> Find Dealer</a>
+              <a ><i class="fa fa-map-pin"></i> Find Dealer</a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-automobile"></i> Test Drive</a>
+              <a ><i class="fa fa-automobile"></i> Test Drive</a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-mobile-phone"></i> Let Us Call You</a>
+              <a ><i class="fa fa-mobile-phone"></i> Let Us Call You</a>
             </li>
             <li>
-              <a href="#" class="back-to-top" title="Back to top"
+              <a  class="back-to-top" title="Back to top"
                 ><i class="fa fa-angle-up"></i> Back to top</a
               >
             </li>
@@ -1658,10 +1698,8 @@
       }
     </script>
     <script>
-      window.onload = function () {
-        selectCard(0);
-      };
       function selectCard(cardIndex) {
+        console.log(cardIndex);
         // Remove 'selected' class from all cards
         document.querySelectorAll(".cardCat").forEach(function (card) {
           card.classList.remove("selected");
@@ -1685,7 +1723,8 @@
       }
     </script>
     <script>
-      function openNav() {
+      function openNavTotal() {
+        console.log("kkkkkkkkk");
         document.getElementById("mySidebar").style.height = "100%";
         document.getElementById("main").style.marginBottom = "250px";
       }
@@ -1809,6 +1848,48 @@
         // Show the table
         document.getElementById("table").style.display = "block";
       }
+    </script>
+    <script>
+      window.onload = function () {
+        selectCard(0);
+
+        openNav();
+      };
+      let first = true;
+      function openNav() {
+        if (first) {
+          document.getElementById("Page").style.height = "102vh";
+          document.getElementById("header").style.top = "-95px";
+          document.getElementById("Page").style.marginTop = "-95px";
+          document.getElementById("logoImageSwiper").style.zIndex = "999999999";
+          document.getElementById("logoImageSwiper").style.marginLeft = "11px";
+          document.getElementById("logoImageSwiper").style.position =
+            "absolute";
+
+          first = !first;
+          console.log(first);
+        } else {
+          document.getElementById("Page").style.height = "673px";
+          document.getElementById("header").style.top = "0px";
+          document.getElementById("Page").style.marginTop = "-16px";
+          document.getElementById("logoImageSwiper").style.zIndex = "999999999";
+          document.getElementById("logoImageSwiper").style.marginLeft = "11px";
+
+          document.getElementById("logoImageSwiper").style.position =
+            "absolute";
+          ("999999999px");
+          first = !first;
+        }
+      }
+    </script>
+    <script>
+      const drawerButton = document.getElementById("toggleButton");
+      const sidebar = document.querySelector(".sidebar-blogDrawer");
+
+      drawerButton.addEventListener("click", function () {
+        drawerButton.classList.toggle("show-sidebarButton");
+        sidebar.classList.toggle("show-sidebar");
+      });
     </script>
   </body>
 </html>

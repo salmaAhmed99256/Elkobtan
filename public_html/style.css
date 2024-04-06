@@ -2624,7 +2624,7 @@ body .alert strong {
 }
 
 .white-section {
-  background: #fff;
+  background: #1f2021;
 }
 
 .light-section {
@@ -2805,6 +2805,7 @@ body .alert strong {
   transition: transform 0.3s;
 }
 .main-header {
+  transition: all 0.5s ease-in-out;
   position: absolute;
   top: 0;
   width: 100%;
@@ -3533,6 +3534,21 @@ support for no js
   margin-top: 3px;
   display: block;
 }
+.page-breadcrumb {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0;
+  padding: 4px 16px;
+  color: #aeb2ba;
+  background-color: rgba(240, 240, 240, 0.14901960784313725);
+  white-space: nowrap;
+  font-size: 14.7px;
+  border-radius: 4px;
+  transform: translateY(-51%);
+}
 .page-banner-content .page-breadcrumb {
   position: absolute;
   right: 15px;
@@ -4040,18 +4056,25 @@ support for no js
 #panorama {
   width: 100% !important;
   height: 100% !important;
-  min-height: 876px !important;
+  min-height: 735px !important;
 }
 .overlay-text {
-  position: fixed;
-  top: 90%;
+  /* position: sticky;
+  margin-top: 600px;
   left: 15%;
   transform: translate(-10%, -50%);
   padding: 10px;
   border-radius: 5px;
-  z-index: 999;
+  z-index: 9;
   max-width: 660px;
-  width: 100%;
+  width: 100%; */
+
+  position: fixed;
+  bottom: 0;
+  gap: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 48;
 }
 
 .checkbox {
@@ -4922,7 +4945,7 @@ support for no js
   align-items: flex-start;
 }
 .sidebar-blog {
-  min-height: 89vh;
+  /* min-height: 89vh; */
 }
 .sidebar-form form input {
   background: #fff;
@@ -6700,7 +6723,7 @@ support for no js
   }
   .primary-nav:hover > li > a,
   .primary-nav:hover > li > a:not([href]):not([tabindex]) {
-    color: #b8c4d3;
+    color: white;
   }
   .primary-nav > .has-children > a::before,
   .primary-nav > .has-children > a::after {
@@ -6721,12 +6744,12 @@ support for no js
   .primary-nav > li > a:not([href]):not([tabindex]).selected,
   .primary-nav > li > a:not([href]):not([tabindex]):hover,
   .primary-nav > li > a:not([href]):not([tabindex]):focus {
-    color: #08213e;
+    color: #1f2021;
     cursor: pointer;
   }
   .primary-nav > li > a.selected {
-    color: #08213e;
-    box-shadow: inset 0 -3px 0 #08213e;
+    color: #1f2021;
+    box-shadow: inset 0 -3px 0 #1f2021;
   }
   .primary-nav .go-back,
   .primary-nav .see-all {
@@ -7653,7 +7676,7 @@ body {
 
 .sidebar-navigation .cav {
   position: relative;
-  min-width: 340px;
+  min-width: 370px;
 }
 
 .sidebar-navigation .cav ul {
@@ -7680,9 +7703,35 @@ body {
   color: white;
   background-color: #f0151f;
 }
+.sidebar-navigation .cav ul div .back {
+  border-radius: 13px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  max-height: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  display: flex;
+  margin: 10px 4px;
+}
+.sidebar-navigation .cav ul li .back {
+  border-radius: 13px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  max-height: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  display: flex;
+  margin: 10px 4px;
+}
 
 .sidebar-navigation .cav ul li .back a:before {
-  content: "< ";
+  /* content: "< "; */
 }
 
 .sidebar-navigation .cav ul li .back a:focus,
@@ -7691,7 +7740,7 @@ body {
 }
 
 .sidebar-navigation .cav ul li a {
-  padding: 0.75rem;
+  padding: 0.3rem;
   display: block;
   position: relative;
   border-radius: 0.25rem;
@@ -7726,10 +7775,10 @@ body {
 .cardCat {
   box-sizing: border-box;
   /* max-width: 180px; */
-  width: 200px;
+  min-width: 200px;
   height: 100px;
-  background: transparent;
-  border: 1px solid white;
+  background: #0000008c;
+  /* border: 1px solid white; */
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
   border-radius: 3px;
@@ -7745,11 +7794,11 @@ body {
   box-sizing: border-box;
   max-width: 343px;
   width: 100%;
-  height: 100px;
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
+  height: 90px;
+  background: rgb(0 0 0 / 58%);
+  border: 1px solid black;
   backdrop-filter: blur(6px);
-  border-radius: 17px;
+  border-radius: 6px;
   text-align: center;
   cursor: pointer;
   transition: all 0.5s;
@@ -7758,20 +7807,26 @@ body {
   justify-content: center;
   user-select: none;
   font-weight: bolder;
-  color: #f0151f;
+  color: #ffffff;
 }
 .cardFea:active {
   /* transform: scale(0.95) rotateZ(1.7deg); */
 }
 
 .cardCat:hover {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   transform: scale(1.05);
 }
 .cardCat.selected {
-  border: 1px solid #08213e;
-  transform: scale(1.05);
-  background-color: #84868b;
+  border: 1px solid #4a0505fa;
+  background-color: #4a050599;
+}
+
+/* Initially hide the header */
+.hide-header {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s ease-in-out; /* Add transition for smooth animation */
 }
 
 .card:hover {
@@ -7781,7 +7836,7 @@ body {
 }
 
 .cardCat:active {
-  transform: scale(0.95) rotateZ(1.7deg);
+  /* transform: scale(0.95) rotateZ(1.7deg); */
 }
 
 /* .card {
@@ -7806,7 +7861,9 @@ body {
 }
 .cardCat-body img.float-left {
   float: left;
-  height: 70px;
+  height: 66px;
+  margin-top: 2px;
+  padding: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-left: 30px;
   margin-right: 10px;
@@ -7875,8 +7932,8 @@ body {
 
 .menuContent {
   width: 100%;
-  justify-content: center;
-  display: flex;
+  /* justify-content: center; */
+  /* display: flex; */
   margin-bottom: 20px;
 }
 .menu {
@@ -8282,6 +8339,7 @@ body {
 }
 
 .openbtn {
+  height: fit-content;
   max-width: 343px;
   width: 100%;
   font-size: 20px;
@@ -8291,8 +8349,8 @@ body {
   padding: 10px 15px;
   border: none;
   position: absolute;
-  bottom: 20px;
-  z-index: 20;
+  bottom: 95px;
+  z-index: 9999999;
   width: 100%;
 }
 
@@ -8305,7 +8363,7 @@ body {
 
 #main {
   transition: margin-bottom 0.5s;
-  padding: 16px;
+  padding-top: 16px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -8343,7 +8401,7 @@ ul.ks-cboxtags li label {
   /* background-color: rgba(255, 255, 255, 0.9); */
   /* border: 2px solid rgba(139, 139, 139, 0.3); */
   color: #adadad;
-  border-radius: 17px;
+  border-radius: 6px;
   white-space: nowrap;
   margin: 3px 0px;
   -webkit-touch-callout: none;
@@ -8356,14 +8414,14 @@ ul.ks-cboxtags li label {
 }
 
 ul.ks-cboxtags li label {
-  padding: 10px 9px;
+  padding: 5px 9px;
   display: flex;
   align-items: center;
   cursor: pointer;
   width: 100%;
 }
 
-ul.ks-cboxtags li label::before {
+ul.ks-cboxtags li label::after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -8373,12 +8431,13 @@ ul.ks-cboxtags li label::before {
   display: flex;
   align-items: center;
   font-size: 12px;
+  margin-left: 60px;
   padding: 2px 6px 2px 2px;
   content: "\f067";
   transition: transform 0.3s ease-in-out;
 }
 
-ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::after {
   content: "\f00c";
   transform: rotate(-360deg);
   transition: transform 0.3s ease-in-out;
@@ -8400,4 +8459,114 @@ ul.ks-cboxtags li input[type="checkbox"] {
 }
 ul.ks-cboxtags li input[type="checkbox"]:focus + label {
   /* border: 2px solid #e9a1ff; */
+}
+
+.unselectable {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.sidebar-blog {
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  height: 100%;
+}
+
+.sidebar-blogDrawer {
+  padding: 0;
+  position: fixed;
+  top: 80px; /* Adjust the top position as needed */
+  /* right: -100%;  */
+  /* width: 332px;  */
+  height: 100%;
+  background-color: #fff; /* Set background color of the sidebar */
+  transition: all 0.7s ease-in-out; /* Transition width over 1 second */
+}
+
+#toggleButton {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .sidebar-blog {
+    justify-content: flex-start; /* Align sidebar to the top */
+  }
+
+  #toggleButton {
+    position: absolute;
+    top: 50%;
+    height: auto;
+    right: -50px !important;
+    width: auto;
+    transform: translateX(-50%);
+    padding-left: 20px;
+    padding-right: 30px;
+    transition: all 1.5s ease-in-out; /* Transition width over 1 second */
+  }
+  .sidebar-blogDrawer {
+    transition: all 1.5s ease-in-out; /* Transition width over 1 second */
+    top: 80px;
+    right: -100%;
+    min-width: 335px;
+    max-height: 89vh;
+    height: 100%;
+    z-index: 999;
+    /* Ensure the sidebar is above other content */
+  }
+
+  .show-sidebar {
+    right: 0;
+    transition: all 1.5s ease-in-out; /* Transition width over 1 second */
+  }
+
+  #toggleButton {
+    display: flex;
+    right: -50px;
+    width: auto;
+    z-index: 999;
+    transition: all 1.5s ease-in-out; /* Transition width over 1 second */
+    /* Ensure the sidebar is above other content */
+  }
+  .show-sidebarButton {
+    top: 80px;
+    right: -100%;
+    min-width: 336px !important; /* Set the maximum width */
+    max-height: 89vh;
+    height: 100%;
+    transition: right 1.5s ease-in-out; /* Transition only the right property */
+    z-index: 999; /* Ensure the sidebar is above other content */
+  }
+
+  .show-sidebar {
+    transform: translateX(0%);
+    transition: transform 1.5s ease-in-out; /* Transition the transform property */
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
+  padding-top: 60px;
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+#Page {
+  transition: margin-top 0.5s;
+  padding: 16px;
 }
